@@ -3,22 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Sabor do Brasil</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gerenciador</h1>
-    <p>Seja-bem vindo(a) À Biblioteca :3</p>
-    <br><br>
 
-    <div style="background-color: rgba(0, 0, 0, 0.575);width: 25%; margin: auto; border-style: double; border-color: plum;">
-    <br><br>
-    <H1>Cadastros</H1>
-    <a href="cadastra_cliente.html"><button>Cadastrador de Clientes</button></a>
-    <br><br>
+    <?php
+    include('config.php');
 
-    <a href="cadastra_livro.html"><button>Cadastrador de Livros</button></a>
-    <br><br>
-    </div>
+    ?>
+        <div class="container">
+                <div class="perfil">
+                    <img src="./Anexos/logo/logo_sabor_do_brasil.png" alt="logo">
+                    <h3 >Sabor do Brasil</h3>
+                    <hr>
+                    <table>
+                        <td class="text-center">
+                            <p>
+                                9 <br>
+                                Quantidade <br>
+                                Likes
+                            </p>
+                        </td>
+                        <td class="text-center">
+                            <p>
+                                12 <br>
+                                Quantidade <br>
+                                Comentários
+                            </p>
+                        </td>
+                    </table>
+                </div>
+                <div class="publi">
+                <h1>Publicações</h1>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <h2>Prato 1</h2>
+                            <img src="./Anexos/publicacao/publicacao01.png" alt="">
+                            <div class="local">
+                                <span>Local 1</span>
+                                <span>Maceió-AL</span>
+                            </div>
+                            <div class="icons">
+                                <span>
+                                    <img class="setas" src="./Anexos/icones/flecha_cima_vazia.svg" alt="">
+                                    2
+                                    <img src="./Anexos/icones/flecha_baixo_vazia.svg" alt="">
+                                    1
+                                </span>
+                                <span>
+                                    <img src="./Anexos/icones/chat.svg" alt="">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Prato 2</h2>
+                            <img src="./Anexos/publicacao/publicacao02.png" alt="">
+                            <div class="local">
+                                <span>Local 2</span>
+                                <span>Maceió-AL</span>
+                            </div>
+                            <div class="icons">
+                                <span>
+                                    <img class="setas" src="./Anexos/icones/flecha_cima_vazia.svg" alt="">
+                                    2
+                              
+                                    <img src="./Anexos/icones/flecha_baixo_vazia.svg" alt="">
+                                    1
+                                </span>
+                                <span>
+                                    <img src="./Anexos/icones/chat.svg" alt="">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Prato 3</h2>
+                            <img src="Anexos/publicacao/publicacao03.png" alt="">
+                            <div class="local">
+                                <span>Local 3</span>
+                                <span>Maceió-AL</span>
+                            </div>
+
+                            <div class="icons">
+                                <span>
+                                    <img class="setas" src="./Anexos/icones/flecha_cima_vazia.svg" alt="">
+                                    2
+                           
+                                    <img src="./Anexos/icones/flecha_baixo_vazia.svg" alt="">
+                                    1
+                                </span>
+                                <span>
+                                    <img src="./Anexos/icones/chat.svg" alt="">
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                <div class="usuario">
+                    <button id="openModal">Entrar</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login</h2>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu email">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" placeholder="Digite sua senha">
+                    <div class="modal-buttons">
+                    <button id="cancel">Cancelar</button>
+                    <button id="login">Entrar</button>
+                    </div>
+                </div>
+            </div>
+                </div>
+        </div>
+
+    <footer>
+                <div class="icons-footer">
+                    <span>
+                        Sabor do Brasil
+                    </span>
+                    <span>
+                        <img src="./Anexos/icones/Instagram.svg" alt="">
+                        <img src="./Anexos/icones/Twitter.svg" alt="">
+                        <img src="./Anexos/icones/Whatsapp.svg" alt="">
+                        <img src="./Anexos/icones/Globe.svg" alt="">
+                    </span>
+                    <span>
+                        Copyright - 2024
+                    </span>
+                </div>
+    </footer>
+    <script src="codigos.js"></script>
 </body>
 </html>
